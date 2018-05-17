@@ -10,16 +10,16 @@ humandate: "FIXME"    # human-readable dates for the workshop (e.g., "Feb 17-18,
 humantime: "FIXME"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: FIXME      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: FIXME        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["FIXME"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["FIXME"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-email: ["fixme@example.org"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+instructor: ["Dhiraj Thakare", "Kay McNulty", "Betty Jennings", "Betty Snyder"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Dhiraj Thakare", "Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+email: ["Dhiraj.thakare1@gmail.com", "marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:             # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
 {% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
 
-{% comment %}
+{% Please attend this workshop if you want to learn R %}
   HEADER
 
   Edit the values in the block above to be appropriate for your workshop.
@@ -28,7 +28,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   And run 'make workshop-check' *before* committing to make sure that changes are good.
 {% endcomment %}
 
-{% comment %}
+{% No EVENTBRITE %}
   EVENTBRITE
 
   This block includes the Eventbrite registration widget if
@@ -53,7 +53,7 @@ and our administrator may contact you if we need any extra information.</h4>
 
 <h2 id="general">General Information</h2>
 
-{% comment %}
+{% My name is Dhiraj and I am going to introduce you to Data Management in R %}
   INTRODUCTION
 
   Edit the general explanatory paragraph below if you want to change
@@ -67,7 +67,7 @@ and our administrator may contact you if we need any extra information.</h4>
   {% include lc/intro.html %}
 {% endif %}
 
-{% comment %}
+{% any Student %}
   AUDIENCE
 
   Explain who your audience is.  (In particular, tell readers if the
@@ -81,7 +81,7 @@ and our administrator may contact you if we need any extra information.</h4>
   {% include lc/who.html %}
 {% endif %}
 
-{% comment %}
+{% Tucson Uni of Az %}
   LOCATION
 
   This block displays the address and links to maps showing directions
@@ -100,7 +100,7 @@ and our administrator may contact you if we need any extra information.</h4>
 </p>
 {% endif %}
 
-{% comment %}
+{% May 17th 2018 %}
   DATE
 
   This block displays the date and links to Google Calendar.
@@ -113,11 +113,11 @@ and our administrator may contact you if we need any extra information.</h4>
 </p>
 {% endif %}
 
-{% comment %}
+{% Bring your lptop %}
   SPECIAL REQUIREMENTS
 
   Modify the block below if there are any special requirements.
-{% endcomment %}
+{% Thank you %}
 <p id="requirements">
   <strong>Requirements:</strong> Participants must bring a laptop with a
   Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges
@@ -133,12 +133,12 @@ and our administrator may contact you if we need any extra information.</h4>
   <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
 </p>
 
-{% comment %}
+{% For all %}
   ACCESSIBILITY
 
   Modify the block below if there are any barriers to accessibility or
   special instructions.
-{% endcomment %}
+{% Everyone can access easily %}
 <p id="accessibility">
   <strong>Accessibility:</strong> We are committed to making this workshop
   accessible to everybody.
@@ -157,7 +157,7 @@ and our administrator may contact you if we need any extra information.</h4>
   attempt to provide them.
 </p>
 
-{% comment %}
+{% dhiraj.thakare1@gmail.com %}
   CONTACT EMAIL ADDRESS
 
   Display the contact email address set in the configuration file.
